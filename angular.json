@@ -12,7 +12,7 @@
       "schematics": {},
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:build",
           "options": {
             "outputPath": "dist/dashboard-tile",
             "index": "projects/dashboard-tile/src/index.html",
@@ -49,7 +49,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "dashboard-tile:build"
           },
@@ -66,7 +66,7 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "ngx-build-plus:karma",
           "options": {
             "main": "projects/dashboard-tile/src/test.ts",
             "polyfills": "projects/dashboard-tile/src/polyfills.ts",
