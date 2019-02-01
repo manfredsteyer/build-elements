@@ -20,11 +20,19 @@
 
   <div style="margin:50px">
     <div class="col-sm-3">
-      
+
       <external-dashboard-tile [src]="1"></external-dashboard-tile>
-      
+
     </div>
   </div>
+
+
+  <!-- Polyfills for Browsers supporting
+        Custom Elements. Needed b/c we downlevel
+        to ES5. See: @webcomponents/custom-elements
+  -->
+  <!-- <script src="./assets/custom-elements/src/native-shim.js"></script> -->
+  <!-- Commented out b/c of differential serving -->
 
 </body>
 </html>

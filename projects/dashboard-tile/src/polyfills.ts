@@ -72,9 +72,22 @@ import 'core-js/es7/reflect';
  * Zone JS is required by default for Angular itself.
  */
 import 'zone.js/dist/zone';  // Included with Angular CLI.
+import { environment } from './environments/environment';
 
 
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+
+if (window['customElements'] && !environment.production) {
+  document.write('<script src="/assets/custom-elements/src/native-shim.js"></script>')
+}
+
+// This polyfill for web components has to be loaded
+// after the other polyfills (esp. the core-js ones)
+// using a script tag
+if (!window['customElements']) {
+    document.write('<script src="/assets/webcomponentsjs/webcomponents-loader.js"></script>');
+}

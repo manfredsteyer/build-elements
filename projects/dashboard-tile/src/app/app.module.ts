@@ -17,7 +17,7 @@ import { createCustomElement } from '@angular/elements';
        ExternalDashboardTileComponent
    ]
 })
-export class AppModule { 
+export class AppModule {
     constructor(private injector: Injector) {
     }
 
