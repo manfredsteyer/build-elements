@@ -38,7 +38,7 @@ import 'core-js/es6/set';
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 
 /** IE10 and IE11 requires the following for the Reflect API. */
-// import 'core-js/es6/reflect';
+import 'core-js/es6/reflect';
 
 
 /** Evergreen browsers require these. **/
@@ -68,26 +68,27 @@ import 'core-js/es7/reflect';
  */
 // (window as any).__Zone_enable_cross_context_check = true;
 
+
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
 import 'zone.js/dist/zone';  // Included with Angular CLI.
+
+
 import { environment } from './environments/environment';
 
+//import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js';
+// import '@webcomponents/webcomponentsjs/bundles/webcomponents-ce.js';
+// import '@webcomponents/webcomponentsjs/bundles/webcomponents-sd.js';
 
-
-/***************************************************************************************************
- * APPLICATION IMPORTS
- */
-
-
-if (window['customElements'] && !environment.production) {
-  document.write('<script src="/assets/custom-elements/src/native-shim.js"></script>')
+if (window['customElements'] /*&& !environment.production*/) {
+  const script = document.createElement('script');
+  script.src = './assets/webcomponentsjs/custom-elements-es5-adapter.js';
+  document.writeln(script.outerHTML);
 }
 
-// This polyfill for web components has to be loaded
-// after the other polyfills (esp. the core-js ones)
-// using a script tag
 if (!window['customElements']) {
-    document.write('<script src="/assets/webcomponentsjs/webcomponents-loader.js"></script>');
+  const script = document.createElement('script');
+  script.src = './assets/webcomponentsjs/bundles/webcomponents-sd-ce.js';
+  document.writeln(script.outerHTML);
 }

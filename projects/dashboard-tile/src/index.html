@@ -26,13 +26,14 @@
     </div>
   </div>
 
+  <script>
 
-  <!-- Polyfills for Browsers supporting
-        Custom Elements. Needed b/c we downlevel
-        to ES5. See: @webcomponents/custom-elements
-  -->
-  <!-- <script src="./assets/custom-elements/src/native-shim.js"></script> -->
-  <!-- Commented out b/c of differential serving -->
+  if (!window['customElements'] && "noModule" in HTMLScriptElement.prototype) {
+    const script = document.createElement('script');
+    script.src = './assets/webcomponentsjs/bundles/webcomponents-sd-ce.js';
+    document.writeln(script.outerHTML);
+  }
+  </script>
 
 </body>
 </html>

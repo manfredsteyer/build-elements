@@ -27,6 +27,7 @@
     "@angular/platform-browser": "^7.1.4",
     "@angular/platform-browser-dynamic": "^7.1.4",
     "@angular/router": "^7.1.4",
+    "@open-wc/polyfills-loader": "^0.2.0",
     "@swimlane/ngx-charts": "^8.1.0",
     "@webcomponents/custom-elements": "^1.1.2",
     "@webcomponents/webcomponentsjs": "^2.2.5",
@@ -38,10 +39,10 @@
     "ngx-build-modern": "^1.1.7",
     "npm": "^6.5.0",
     "rxjs": "^6.3.3",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.29"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.11.4",
+    "@angular-devkit/build-angular": "^0.13.0",
     "@angular/cli": "~7.3.0",
     "@angular/compiler-cli": "^7.1.4",
     "@angular/elements": "^7.1.4",
@@ -62,7 +63,7 @@
     "protractor": "^5.4.2",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
-    "typescript": "~3.1.6",
+    "typescript": "~3.2.4",
     "webpack-dev-server": "^3.1.14"
   }
 }
