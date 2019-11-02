@@ -39,18 +39,19 @@
     "ngx-build-plus": "^9.0.2",
     "npm": "^6.5.0",
     "rxjs": "^6.5.3",
-    "zone.js": "^0.10.2"
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.900.0-rc.0",
+    "@angular-devkit/build-angular": "~0.900.0-rc.0",
     "@angular/cli": "~9.0.0-rc.0",
     "@angular/compiler-cli": "^9.0.0-rc.0",
     "@angular/elements": "^9.0.0-rc.0",
     "@angular/language-service": "^9.0.0-rc.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
-    "codelyzer": "~4.2.1",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^5.1.2",
     "cpr": "^3.0.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
